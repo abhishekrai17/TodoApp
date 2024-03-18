@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(156, 156, 156);
+}
+
+.container {
+    width: 50vw;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #d5d7db;
+    display: flex;
+    flex-direction: column;
+    background-color: #d5d7db;
+    border-radius: 10px;
+}
+
+.user-input-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+
+}
+
+.input-box {
+    padding: 4px 8px;
+    border: 1px solid black;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.add-btn {
+    background-color: black;
+    color: white;
+    padding: 4px;
+    border: 0;
+}
+
+.add-btn:hover {
+    background-color: rgb(5, 103, 121);
+    color: black;
+
+}
+
+.list-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.todo {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 4px;
+    border: 1px solid #d5d7db;
+    cursor: pointer;
+
+
+}
+
+.todo p,
+.todo input[type=checkbox],
+.todo span {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    background-color: #677a9e;
+    border-radius: 5px;
+
+}
+
+.delete:hover {
+    background-color: red;
+}
+
+.checked-todo {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 4px;
+    border: 1px solid #d5d7db;
+    cursor: pointer;
+    text-decoration: line-through;
+
+
+}
+
+.checked-todo p,
+.checked-todo [type=checkbox],
+.checked-todo span {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #6765c5;
+    border-radius: 5px;
+
+}
